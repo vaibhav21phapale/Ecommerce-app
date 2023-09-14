@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecommerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="project.css">
+
+  <script>
+
+
+  </script>
+  <style>
+  .row{
+    flex-shrink: 0; 
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    display: block;
+    justify-content: center;
+  
+}
+  </style>
+
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+   
+    <div id="header"></div>
+          <div class="container-fluid" style="padding-bottom: 40px; padding: 30px; display: flex;">
+            
+              <div class="row" style="justify-content: center; padding: 30px;">
+                  <div class="col-lg-6" style="justify-content: center;">
+                      <div class="row" style="border: solid black; justify-content: center;">
+                        <h4>Itmes In Cart</h4>
+                          <!-- First Column - Product Image -->
+                          <div class="col-md-4">
+                              <img src="images/download (1).jpg" alt="Product Image" class="img-fluid" width="80px">
+                          </div>
+                          <!-- Second Column - Product Details -->
+                          <div class="col-md-4">
+                              <h4>Product Name</h4>
+                              <p>Price: $10.00</p>
+                              <i class="fas fa-trash" style="color: #eecc0f;"></i>
+                          </div>
+                          <!-- Third Column - Quantity Form -->
+                          <div class="col-md-4">
+                              <form class="form-inline">
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <button class="btn btn-warning" type="button"><i class="fas fa-minus" style="color: black;" style="fill: #eecc0f;"></i></button>
+                                      </div>
+                                      <input type="text" class="form-control text-center" value="1">
+                                      <div class="input-group-append">
+                                          <button class="btn btn-warning" type="button"><i class="fas fa-plus"  style="color: black;"   style="background-color: #eecc0f;"></i></button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                      <!-- Repeat the above structure for each product in the cart -->
+                  </div>
+                  <div class="col-lg-4" style="border: solid black; display: inline;">
+                      <!-- Summary Card -->
+                      <div class="summary-card">
+                          <div class="card-header">
+                              <h4>Summary</h4>
+                          </div>
+                          <div class="product-price">
+                              <p>Product Price (Total): $10.00</p>
+                              <p>Shipping: $5.00</p>
+                              <hr>
+                              <p>Total Cost: $15.00</p>
+                          </div>
+                          <div class="card-footer" style="align-items: center; justify-content: center;";>
+                              <button class="btn btn-warning">Checkout</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $(function () {
+      $("#header").load('commonpages/header.html');
+      $("#footer").load('commonpages/footer.html');
+    });
+    </script>
+</body>
+</html>
